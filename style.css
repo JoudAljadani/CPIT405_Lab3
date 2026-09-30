@@ -1,0 +1,153 @@
+/* General Page Style  */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f8fb;
+  color: #2f3e4d;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 45px 20px 30px;
+  border-bottom: 3px solid #6f97b4;
+}
+
+/* Main name in header */
+header h1 {
+  margin: 0;
+  color: #2f5673;
+  font-size: 40px;
+}
+
+/* Job title under the name */
+header p {
+  margin-top: 10px;
+  color: #6b7f90;
+  font-size: 18px;
+}
+
+/* Navigation Bar */
+nav {
+  margin-top: 25px;
+}
+
+/* Navigation links */
+nav a {
+  color: #4f7896;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+  color: #2f5673;
+}
+
+/* Main CV Container */
+main {
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* CV Sections */
+section {
+  background-color: #ffffff;
+  margin-bottom: 28px;
+  padding: 30px 35px;
+  border-radius: 10px;
+  border-left: 5px solid #6f97b4;
+  box-shadow: 0 3px 10px rgba(47, 86, 115, 0.08);
+}
+
+/* Section headings such as About, Education, Skills */
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #345f7b;
+  font-size: 26px;
+  border-bottom: 1px solid #d5e2eb;
+  padding-bottom: 10px;
+}
+
+/* Subheadings inside sections */
+section h3 {
+  color: #3f6680;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Paragraph text inside sections */
+section p {
+  color: #465d6d;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 22px;
+}
+
+/* List items */
+li {
+  margin-bottom: 8px;
+  color: #465d6d;
+}
+
+/* Links */
+a {
+  color: #4f7896;
+}
+
+/* Links inside sections */
+section a {
+  text-decoration: none;
+}
+
+/* Underline links when hovering */
+section a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+#contact p {
+  margin: 6px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #2f5673;
+  color: white;
+  padding: 18px;
+  margin-top: 40px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+
+  /* Make the main content wider on small screens */
+  main {
+    width: 90%;
+  }
+
+  /* Reduce header name size */
+  header h1 {
+    font-size: 30px;
+  }
+
+  /* Adjust navigation spacing */
+  nav a {
+    display: inline-block;
+    margin: 6px 10px;
+  }
+
+  /* Reduce section padding */
+  section {
+    padding: 22px;
+  }
+}
