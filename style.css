@@ -1,4 +1,8 @@
-/* General Page Style  */
+/* General Page Style */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,6 +10,7 @@ body {
   color: #2f3e4d;
   line-height: 1.6;
 }
+
 
 /* Header Section */
 header {
@@ -15,12 +20,14 @@ header {
   border-bottom: 3px solid #6f97b4;
 }
 
+
 /* Main name in header */
 header h1 {
   margin: 0;
   color: #2f5673;
   font-size: 40px;
 }
+
 
 /* Job title */
 header p {
@@ -29,29 +36,46 @@ header p {
   font-size: 18px;
 }
 
+
 /* Navigation Bar */
 nav {
   margin-top: 25px;
 }
 
+
 /* Navigation links */
 nav a {
+  display: inline-block;
   color: #4f7896;
+  background-color: #eef4f8;
   text-decoration: none;
-  margin: 0 18px;
+  margin: 5px 6px;
+  padding: 8px 16px;
   font-weight: 600;
+  font-size: 15px;
+  border-radius: 20px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
+
 
 /* Navigation hover effect */
 nav a:hover {
-  color: #2f5673;
+  color: #ffffff;
+  background-color: #6f97b4;
+  transform: translateY(-2px);
 }
+
 
 /* Main CV Container */
 main {
   width: 70%;
+  max-width: 1000px;
   margin: 40px auto;
 }
+
 
 /* CV Sections */
 section {
@@ -61,7 +85,20 @@ section {
   border-radius: 10px;
   border-left: 5px solid #6f97b4;
   box-shadow: 0 3px 10px rgba(47, 86, 115, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-left-color 0.3s ease;
 }
+
+
+/* Hover effect on sections */
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(47, 86, 115, 0.15);
+  border-left-color: #345f7b;
+}
+
 
 /* Section headings */
 section h2 {
@@ -73,12 +110,14 @@ section h2 {
   padding-bottom: 10px;
 }
 
+
 /* Subheadings inside sections */
 section h3 {
   color: #3f6680;
   margin-top: 20px;
   margin-bottom: 8px;
 }
+
 
 /* Paragraph text inside sections */
 section p {
@@ -87,10 +126,12 @@ section p {
   margin: 8px 0;
 }
 
+
 /* Lists */
 ul {
   padding-left: 22px;
 }
+
 
 /* List items */
 li {
@@ -98,25 +139,182 @@ li {
   color: #465d6d;
 }
 
+
 /* Links */
 a {
   color: #4f7896;
 }
 
+
 /* Links inside sections */
 section a {
   text-decoration: none;
+  font-weight: 500;
 }
 
-/* Underline links when hovering */
+
+/* Links hover */
 section a:hover {
   text-decoration: underline;
+  color: #2f5673;
 }
+
+
+/* Education Section */
+.education-item {
+  padding: 5px 0;
+}
+
+
+/* Education title */
+.education-item h3 {
+  margin-top: 0;
+}
+
+
+/* Experience Section */
+.experience-item {
+  padding: 5px 0;
+}
+
+
+/* Company name */
+.company-name {
+  font-weight: 600;
+  color: #5c7d93;
+}
+
+
+/* Experience list */
+.experience-item ul {
+  margin-top: 15px;
+}
+
+
+/* Experience bullets */
+.experience-item li {
+  padding-left: 3px;
+}
+
+
+/* Skills Section */
+.skills-list {
+  list-style-type: disc;
+
+  padding-left: 25px;
+
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+
+/* Skill items */
+.skills-list li {
+  display: list-item;
+  margin-bottom: 9px;
+  color: #465d6d;
+}
+
+
+/* Skill bullet color */
+.skills-list li::marker {
+  color: #6f97b4;
+}
+
+
+/* Projects Section */
+.project-card {
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  background-color: #f9fbfd;
+  border: 1px solid #dce8ef;
+  border-radius: 9px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Project hover */
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: #9eb8ca;
+  box-shadow: 0 5px 15px rgba(47, 86, 115, 0.1);
+}
+
+
+/* Project title */
+.project-card h3 {
+  margin-top: 0;
+  color: #345f7b;
+}
+
+
+/* Project type */
+.project-type {
+  color: #718796;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Awards Section */
+.award-item {
+  padding: 18px 20px;
+  background-color: #f9fbfd;
+  border: 1px solid #dce8ef;
+  border-radius: 9px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Award hover */
+.award-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(47, 86, 115, 0.1);
+}
+
+
+/* Award title */
+.award-item h3 {
+  margin-top: 0;
+}
+
+
+/* Languages Section */
+#languages ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+
+/* Language bullets */
+#languages li::marker {
+  color: #6f97b4;
+}
+
 
 /* Contact Section */
 #contact p {
-  margin: 6px 0;
+  margin: 9px 0;
 }
+
+
+/* Contact links */
+#contact a {
+  color: #4f7896;
+  transition: color 0.2s ease;
+}
+
+
+/* Contact links hover */
+#contact a:hover {
+  color: #2f5673;
+}
+
 
 /* Footer */
 footer {
@@ -125,4 +323,63 @@ footer {
   color: white;
   padding: 18px;
   margin-top: 40px;
+}
+
+
+/* Footer paragraph */
+footer p {
+  margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+
+  main {
+    width: 85%;
+  }
+
+}
+
+
+/* Mobile Design */
+@media (max-width: 600px) {
+
+  header {
+    padding: 35px 15px 25px;
+  }
+
+
+  header h1 {
+    font-size: 32px;
+  }
+
+
+  header p {
+    font-size: 16px;
+  }
+
+
+  nav a {
+    margin: 5px 3px;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+
+  main {
+    width: 92%;
+    margin: 25px auto;
+  }
+
+
+  section {
+    padding: 22px 20px;
+  }
+
+
+  section h2 {
+    font-size: 21px;
+  }
+
 }
