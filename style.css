@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,6 +13,7 @@ body {
 
 
 header {
+    position: relative;
     text-align: center;
     background-color: #ffffff;
     padding: 45px 20px 30px;
@@ -283,6 +285,25 @@ footer p {
 }
 
 
+#themeBtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    margin: 0;
+    padding: 9px 18px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #eef4f8;
+    color: #2f5673;
+    border: 1px solid #d5e2eb;
+}
+
+#themeBtn:hover {
+    background-color: #6f97b4;
+    color: white;
+}
+
+
 .project-filters {
     margin-bottom: 20px;
 }
@@ -363,6 +384,16 @@ body.dark-mode {
     background-color: #101e29;
 }
 
+.dark-mode #themeBtn {
+    background-color: #354e61;
+    color: white;
+    border-color: #557e99;
+}
+
+.dark-mode #themeBtn:hover {
+    background-color: #6f97b4;
+}
+
 
 @media (max-width: 900px) {
     main {
@@ -373,7 +404,7 @@ body.dark-mode {
 
 @media (max-width: 600px) {
     header {
-        padding: 35px 15px 25px;
+        padding: 65px 15px 25px;
     }
 
     header h1 {
@@ -382,6 +413,13 @@ body.dark-mode {
 
     header p {
         font-size: 16px;
+    }
+
+    #themeBtn {
+        top: 12px;
+        right: 12px;
+        padding: 7px 12px;
+        font-size: 12px;
     }
 
     nav a {
@@ -466,7 +504,8 @@ body.dark-mode {
     nav,
     .action-btn,
     .project-filters,
-    .print-container {
+    .print-container,
+    #themeBtn {
         display: none !important;
     }
 
